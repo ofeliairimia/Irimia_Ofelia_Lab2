@@ -4,6 +4,7 @@ using Irimia_Ofelia_Lab2.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Irimia_Ofelia_Lab2.Migrations
 {
     [DbContext(typeof(Irimia_Ofelia_Lab2Context))]
-    partial class Irimia_Ofelia_Lab2ContextModelSnapshot : ModelSnapshot
+    [Migration("20231028123155_PublishingDate")]
+    partial class PublishingDate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

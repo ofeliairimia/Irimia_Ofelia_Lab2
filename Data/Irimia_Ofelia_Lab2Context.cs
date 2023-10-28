@@ -18,6 +18,8 @@ namespace Irimia_Ofelia_Lab2.Data
 
         public DbSet<Irimia_Ofelia_Lab2.Models.Publisher>? Publisher { get; set; }
 
-        public DbSet<Irimia_Ofelia_Lab2.Models.Author>? Authors { get; set; } = default!;
+        public DbSet<Irimia_Ofelia_Lab2.Models.Author>? Author { get; set; }
+
+        public DbSet<Irimia_Ofelia_Lab2.Models.Category>? Category { get; set; }
     }
 }

@@ -24,12 +24,12 @@ namespace Irimia_Ofelia_Lab2.Pages.Authors
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Authors == null)
+            if (id == null || _context.Author == null)
             {
                 return NotFound();
             }
 
-            var author = await _context.Authors.FirstOrDefaultAsync(m => m.ID == id);
+            var author = await _context.Author.FirstOrDefaultAsync(m => m.ID == id);
 
             if (author == null)
             {
@@ -44,16 +44,16 @@ namespace Irimia_Ofelia_Lab2.Pages.Authors
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            if (id == null || _context.Authors == null)
+            if (id == null || _context.Author == null)
             {
                 return NotFound();
             }
-            var author = await _context.Authors.FindAsync(id);
+            var author = await _context.Author.FindAsync(id);
 
             if (author != null)
             {
                 Author = author;
-                _context.Authors.Remove(Author);
+                _context.Author.Remove(Author);
                 await _context.SaveChangesAsync();
             }
 
