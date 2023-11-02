@@ -57,6 +57,5 @@ namespace Irimia_Ofelia_Lab2.Pages.Books
             await _context.SaveChangesAsync();
             return RedirectToPage("./Index");
         }
-        
     }
 }

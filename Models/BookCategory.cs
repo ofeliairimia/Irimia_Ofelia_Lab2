@@ -1,4 +1,6 @@
-﻿namespace Irimia_Ofelia_Lab2.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Irimia_Ofelia_Lab2.Models
 {
     public class BookCategory
     {
