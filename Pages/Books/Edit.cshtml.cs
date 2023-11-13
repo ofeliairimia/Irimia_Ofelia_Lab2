@@ -13,6 +13,7 @@ using Irimia_Ofelia_Lab2.Models;
 
 namespace Irimia_Ofelia_Lab2.Pages.Books
 {
+    [Authorize(Roles = "Admin")]
     public class EditModel : BookCategoriesPageModel
     {
         private readonly Irimia_Ofelia_Lab2.Data.Irimia_Ofelia_Lab2Context _context;
