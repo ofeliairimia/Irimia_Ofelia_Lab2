@@ -32,7 +32,8 @@ builder.Services.AddDbContext<Irimia_Ofelia_Lab2Context>(options =>
 builder.Services.AddDbContext<LibraryIdentityContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Irimia_Ofelia_Lab2Context") ?? throw new InvalidOperationException("Connection string 'Irimia_Ofelia_Lab2Context' not found.")));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<IdentityUser>(options => 
+    options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<LibraryIdentityContext>();
 

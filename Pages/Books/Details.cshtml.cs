@@ -11,7 +11,6 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Irimia_Ofelia_Lab2.Pages.Books
 {
-    [Authorize(Roles = "Admin")]
     public class DetailsModel : PageModel
     {
         private readonly Irimia_Ofelia_Lab2.Data.Irimia_Ofelia_Lab2Context _context;
